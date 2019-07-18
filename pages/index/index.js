@@ -9,9 +9,9 @@ Page({
   },
 
   onLoad: function() {
-    let type
-    if (app.globalData.devicePlatform) {
-      type = app.globalData.devicePlatform == 'ios' ? '2' : '1'
+    let type 
+    if (app.globalData.devicePlatform){
+      type = app.globalData.devicePlatform == 'android'?'1':'2'
     }
     API.getBanner({
       type: type
