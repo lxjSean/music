@@ -9,8 +9,12 @@ Page({
   },
 
   onLoad: function() {
+    let type
+    if (app.globalData.devicePlatform) {
+      type = app.globalData.devicePlatform == 'ios' ? '2' : '1'
+    }
     API.getBanner({
-      type: 2
+      type: type
     }).then(res => {
       if (res.code === 200) { //更加严谨
         this.setData({
