@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/video/video",
     "pages/mine/mine",
     "pages/friend/friend",
