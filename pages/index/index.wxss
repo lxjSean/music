@@ -1,9 +1,43 @@
+/* 顶部搜索 */
+
+.top-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: space-between;
+  padding: 15rpx;
+  box-sizing: border-box;
+}
+
+.top-slide .search-enter {
+  flex: 1;
+  line-height: 50rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 15rpx;
+  margin: 0 25rpx;
+  text-align: center;
+  color: #ccc;
+  font-size: 14rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(250, 250, 250, .7);
+}
+
+.top-slide .search-enter image {
+  width: 25rpx;
+  height: 25rpx;
+  margin-right: 20rpx;
+}
+
+/* 轮播图 */
+
 .swiper-contain {
   padding: 15rpx;
   overflow: hidden;
 }
 
-.swiper swiper-item{
+.swiper swiper-item {
   border-radius: 8rpx;
 }
 

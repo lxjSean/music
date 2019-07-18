@@ -1,0 +1,6 @@
+/* icon 图标 */
+
+.music-icon {
+  width: 50rpx;
+  height: 50rpx;
+}

@@ -1,7 +1,15 @@
 <!--index.wxml-->
 <view class="container">
+  <view class='top-slide'>
+    <image class='music-icon' src='../../static/icon/microphone.png'/>
+    <view class='search-enter'>
+      <image src='../../static/icon/search_icon.png'></image>
+      <text>周杰伦</text>
+    </view>
+    <image class='music-icon' src='../../static/icon/playing.png'/>
+  </view>
   <view class="swiper-contain">
-    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="2000" indicator-active-color="#D9230B" indicator-color="rgba(250,250,250,.7)" circula="true">
+    <swiper class="swiper" circular="true" indicator-dots="true" autoplay="true" interval="3000" duration="2000" indicator-active-color="#D9230B" indicator-color="rgba(250,250,250,.7)">
       <block wx:for="{{banner}}" wx:key="index">
         <swiper-item>
           <image src="{{item.picUrl}}" class="slide-image" />
